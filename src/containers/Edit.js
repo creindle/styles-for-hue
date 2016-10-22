@@ -114,8 +114,7 @@ class Edit extends Component {
       })
       var idArray = id.split("\n");
       for (var i = 0; i < idArray.length; i++){
-        console.log(idArray.length);
-        options += '<a href="template/' + idArray[i] + '"' + '>' + idArray[i] + '</a>';
+        options += '<a href="' + idArray[i] + '"' + '>' + idArray[i] + '</a>';
       };
       $('#Input').append(options);
     })
@@ -264,7 +263,6 @@ class Edit extends Component {
           <div className="dropdown-content"
             id="Input"
           >
-            <a href="#"></a>
           </div>
         </div>
         <div
